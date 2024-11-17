@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Mantra Zone",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#a6a99c",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/mantra.jpg",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://mantra-zone.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://mantra-zone.github.io/sitemap.xml",
+    "mbrsiteDomain": "fxgtfn2lcg",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Mantra Zone | MANTRA | Home",
+        "meta_descr": "Join MANTRA Zone to monitor your Hongbai testnet activities, rank up through quests, and secure rewards in the upcoming MANTRA Chain launch.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/mantra-zone.png\" alt=\"Mantra zone\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uumymlGcgR",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#a6a99c",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#a6a99c"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Mantra Zone: Pioneering the Future of Decentralized Finance</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the ever-expanding world of decentralized finance (DeFi), innovative platforms are continuously emerging to redefine how we interact with financial services. One such platform is Mantra Zone, a decentralized finance ecosystem that aims to empower users through a suite of financial products built on blockchain technology. This blog will delve into the intricacies of <a href=\"https://mantra-zone.github.io/\" class=\"text-primary\"><b>Mantra Zone</b></a>, exploring its unique features, benefits, challenges, and its vision for the future of finance.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Mantra Zone?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://mantra.zone/\" class=\"text-primary\"><b>Mantra Zone</b></a> is a decentralized finance (DeFi) platform that combines elements of staking, lending, and governance to create a holistic financial ecosystem. Built on the Polkadot network and utilizing Substrate, Mantra Zone aims to provide users with access to a wide range of financial services while promoting decentralization and community engagement.<br><br><b>Key Components of Mantra Zone</b><br><b>1.Staking:</b> Users can stake their assets within the platform to earn rewards. Staking not only provides users with passive income but also helps secure the network.<br><b>2.Lending and Borrowing:</b> Mantra Zone offers decentralized lending and borrowing services, allowing users to lend their assets for interest or borrow against their crypto holdings.<br><b>3.Governance:</b> The platform incorporates a governance model that allows users to have a say in the development and future direction of the ecosystem. This decentralized governance ensures that decisions reflect the community’s interests.<br><b>4.Yield Farming:</b> Users can participate in yield farming, where they provide liquidity to the platform in exchange for rewards, further incentivizing participation in the ecosystem.<br><b>5.Cross-Chain Compatibility:</b> Leveraging the capabilities of Polkadot, Mantra Zone aims to facilitate cross-chain transactions, enhancing the interoperability of assets across different blockchain networks.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Vision Behind Mantra Zone</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  The vision of Mantra Zone is rooted in the principles of decentralization, community empowerment, and financial inclusivity. The platform aims to create a user-friendly environment where individuals can access financial services without traditional barriers, such as high fees, lengthy verification processes, or restrictive regulations. By harnessing blockchain technology, Mantra Zone seeks to democratize finance and provide users with greater control over their assets.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Mantra Zone Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. User-Friendly Interface</b><br>One of the hallmarks of Mantra Zone is its intuitive user interface. Designed to cater to both novices and experienced users, the platform enables easy navigation through its various features. Users can quickly access staking, lending, and governance functionalities, making it simple to manage their assets.<br><br><b>2. Staking Mechanism</b><br>Staking on Mantra Zone is straightforward. Users can stake their OM (the native token of Mantra Zone) to earn rewards over time. The staking process typically involves:<br><br>*<b>Choosing a Validator:</b> Users select a validator to delegate their tokens, contributing to the security of the network.<br><b>*Earning Rewards:</b> Staking rewards are distributed periodically, providing users with passive income while helping to secure the network.<br><br><b>3. Lending and Borrowing</b><br>Mantra Zone’s lending and borrowing features allow users to lend their assets and earn interest or borrow against their holdings. The process generally works as follows:<br><br><b>*Lending:</b> Users can deposit their assets into liquidity pools, making them available for others to borrow. In return, lenders earn interest on their deposits.<br><b>*Borrowing:</b> Users can take out loans by providing collateral, allowing them to access funds without selling their assets. This feature is particularly useful for those looking to leverage their holdings for investment opportunities.<br><br><b>4. Governance Model</b><br>Mantra Zone employs a decentralized governance model, giving users a voice in the platform’s development. OM token holders can participate in governance by proposing changes, voting on proposals, and influencing the direction of the ecosystem. This democratic approach fosters community involvement and ensures that decisions align with user interests.<br><br><b>5. Yield Farming</b><br>Yield farming is a key component of the Mantra Zone ecosystem. Users can provide liquidity to various pools and earn rewards in the form of tokens. The yield farming process typically involves:<br><br><b>*Depositing Assets:</b> Users deposit their assets into liquidity pools.<br><b>*Earning Rewards:</b> In exchange for providing liquidity, users earn tokens, which can be staked or traded.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Benefits of Using Mantra Zone</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Decentralization</b><br>Mantra Zone embodies the principles of decentralization, allowing users to retain control over their assets and participate in governance. This reduces reliance on centralized entities and empowers individuals to make decisions about their financial future.<br><br><b>2. Financial Inclusivity</b><br>By offering a range of financial services without the barriers typically associated with traditional finance, Mantra Zone promotes inclusivity. Users from all backgrounds can access the platform, participate in staking, and benefit from decentralized lending and borrowing.<br><br><b>3. High Returns</b><br>With features like yield farming and staking, users can earn attractive returns on their assets. The potential for high yields incentivizes participation and fosters a vibrant ecosystem.<br><br><b>4. Cross-Chain Compatibility</b><br>Mantra Zone’s integration with Polkadot enables cross-chain transactions, allowing users to interact with multiple blockchain networks. This interoperability enhances the platform’s utility and expands access to a broader range of assets.<br><br><b>5. Community-Driven Development</b><br>The governance model of Mantra Zone ensures that development is guided by the community. Users can propose and vote on changes, fostering a sense of ownership and engagement within the ecosystem.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges Facing Mantra Zone</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Volatility</b><br>Like all DeFi platforms, Mantra Zone operates in a highly volatile market. Price fluctuations can impact the value of assets, affecting users’ investments and returns. Users should be prepared for market volatility and conduct thorough research before investing.<br><br><b>2. Security Risks</b><br>The DeFi space is not without its risks. Smart contract vulnerabilities and potential exploits can pose threats to user funds. Mantra Zone must prioritize security audits and best practices to safeguard its users’ assets.<br><br><b>3. Regulatory Uncertainty</b><br>As the regulatory landscape surrounding cryptocurrencies and DeFi evolves, platforms like Mantra Zone may face challenges. Compliance with regulations is crucial for ensuring long-term sustainability and user trust.<br><br><b>4. Competition</b><br>The DeFi space is highly competitive, with numerous platforms offering similar services. Mantra Zone must continually innovate and differentiate itself to attract and retain users.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Mantra Zone</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Services</b><br>As the DeFi landscape continues to grow, Mantra Zone is likely to expand its offerings. This could include additional financial products, partnerships with other protocols, and enhanced user features to meet evolving user needs.<br><br><b>2. Enhanced User Experience</b><br>User experience will remain a focal point for Mantra Zone. The platform may introduce new tools, resources, and educational content to empower users and facilitate their understanding of DeFi.<br><br><b>3. Increased Security Measures</b><br>To address security concerns, Mantra Zone will likely invest in advanced security protocols and conduct regular audits. Building a reputation for security and reliability will be crucial for attracting users.<br><br><b>4. Community Engagement</b><br>Mantra Zone will continue to emphasize community engagement, seeking feedback and input from users. Events, forums, and educational initiatives can help foster a strong community and improve the platform.<br><br><b>5. Interoperability Enhancements</b><br>As the demand for cross-chain solutions grows, Mantra Zone may focus on enhancing its interoperability features. Integrating with additional blockchain networks will broaden access to assets and services.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Mantra Zone stands at the forefront of the decentralized finance revolution, offering a comprehensive suite of financial services designed to empower users and promote financial inclusivity. With its commitment to decentralization, user-friendly interface, and community-driven governance, Mantra Zone is well-positioned to thrive in the evolving DeFi landscape.<br><br>As the platform continues to grow and adapt, it will play a crucial role in shaping the future of finance. By fostering innovation, enhancing user experience, and prioritizing security, Mantra Zone aims to create a sustainable ecosystem that benefits all participants.<br><br>For users seeking to explore the world of decentralized finance, Mantra Zone offers an accessible gateway to a new era of financial opportunities. Whether you’re interested in staking, lending, or participating in governance, Mantra Zone empowers you to take control of your financial future in a decentralized world. Embracing the principles of blockchain technology, Mantra Zone is not just a platform—it's a movement towards a more equitable and inclusive financial system.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uumymGN4jZ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
